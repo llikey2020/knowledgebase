@@ -1,1 +1,1 @@
-# [Visit the Wiki](https://gitlab.planetrover.io/planetrover/knowledge/-/wikis/home)
+# [Visit the Wiki](https://gitlab.planetrover.ca/planetrover/knowledge/-/wikis/home)
