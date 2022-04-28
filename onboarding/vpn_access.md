@@ -11,7 +11,7 @@ For Mac OS:
     Please contact Jun Tang (tangjun@sequoiadb.com) for Mac OS setup
     
 ## Install Config Files
-Copy VPN access files to C:\Users\<your_windows_user>\OpenVPN\config
+Copy VPN access files to C:\Users\\<your_windows_user>\\OpenVPN\config
 
 
 ## Start Open VPN
