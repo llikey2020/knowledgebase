@@ -1,4 +1,30 @@
 This document will help you setup a Web Based IDE for development
+
+# Method 1: Use docker command to doploy cloud
+
+## Install docker
+```
+sudo yum install docker
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+## Start the dokker container
+```
+sudo docker run -d \
+  --name=cloud9 \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=America/Toronto \
+  -p 8000:8000 \
+  -v /home/centos/workspace:/code:z \
+  --restart unless-stopped \
+  container-registry.planetrover.ca:31320/cloud9:v0.1
+
+```
+
+# Method 2: Install from scratch
+
 # Install NVM and node.js
 Make sure your system have curl installed.
 ```
