@@ -22,6 +22,7 @@ sudo docker run -d \
   container-registry.planetrover.ca:31320/cloud9:v0.1
 
 ```
+Now you can access your ide from http://vm-ip:8000/ with the username and password you specified.
 
 # Method 2: Install from scratch
 
