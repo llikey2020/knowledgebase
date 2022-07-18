@@ -22,7 +22,15 @@ sudo docker run -d \
   container-registry.planetrover.ca:31320/cloud9:v0.1
 
 ```
-Now you can access your ide from http://vm-ip:8000/ with the username and password you specified.
+Now you can access your ide from http://vm-ip:8000/
+
+After start using the ide, if you need to install any package, just use apt command. e.g.
+
+```
+sudo apt update
+sudo apt install vim
+```
+
 
 # Method 2: Install from scratch
 
