@@ -31,6 +31,40 @@ sudo apt update
 sudo apt install vim
 ```
 
+## Optional: How to build the cloud9 IDE docker image
+
+Use following Dockerfile
+
+```
+FROM ghcr.io/linuxserver/baseimage-cloud9:latest
+
+# Docker compose
+#COPY --from=compose /usr/local/bin/docker-compose /usr/local/bin/docker-compose
+
+RUN \
+ echo "**** install docker deps ****" && \
+ curl -s \
+	https://download.docker.com/linux/debian/gpg | \
+	apt-key add - && \
+ echo 'deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable' > \
+	/etc/apt/sources.list.d/docker-ce.list && \
+ apt-get update && \
+ apt-get install -y --no-install-recommends \
+	docker-ce openssh-server net-tools && \
+ echo "**** Cleanup and user perms ****" && \
+ apt-get autoclean && \
+ rm -rf \
+	/var/lib/apt/lists/* \
+	/var/tmp/* \
+	/tmp/*
+
+```
+
+Run following command to build
+
+```
+ docker build -t container-registry.planetrover.ca:31320/cloud9:{your version here} . 
+```
 
 # Method 2: Install from scratch
 
