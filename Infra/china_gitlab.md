@@ -13,8 +13,7 @@ I noticed after the server is rebooted, the network between these hosts might be
 systemctl  stop firewalld
 swapoff -a
 ```
-**The gitlab runner is already setup and connected to gitlab.sequoiadb.com
-Once the China gitlab is upgraded to the same version as Toronto gitlab, it should be able to run all the gitlab_ci scripts**
+
 
 ### Deploy gitlab runner on k8s cluster
 use a config file with following contents
@@ -59,9 +58,13 @@ test-job2:
 
 After commit this file, the gitlab ci should be triggered.
 
+For the syntax of the ci file, please refer to https://gitlab.planetrover.ca/help/ci/quick_start/index.md
+
+
+
 # What's missing?
 
-Now the k8s, gitlab runner, and gitlab have already been setup in China internal network. However, since the China gitlab is 3 major versions behind Toronto gitlab, all the Toronto .gitlab-ci.yml scripts are not compatable in China gitlab.
+Now the **k8s, gitlab runner, and gitlab have already been setup** in China internal network. However, since the China gitlab is 3 major versions behind Toronto gitlab, all the Toronto .gitlab-ci.yml scripts are not compatable in China gitlab.
 
 To solve this, we need to upgrade the China gitlab to v14.5.2
 
