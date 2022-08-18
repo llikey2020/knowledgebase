@@ -1,4 +1,3 @@
-
 # Current status of China CI/CD setup
 
 ## k8s cluster for running gitlab runners
@@ -9,7 +8,7 @@
 |192.168.9.203|worker2|root|sequoiadb  |
 
 ### Note
-After the server is rebooted, the network between these hosts might become unavailable. please run command to fix the cluster issues
+I noticed after the server is rebooted, the network between these hosts might become unavailable. please run command to fix the cluster issues
 ```
 systemctl  stop firewalld
 swapoff -a
@@ -18,10 +17,14 @@ swapoff -a
 Once the China gitlab is upgraded to the same version as Toronto gitlab, it should be able to run all the gitlab_ci scripts**
 
 ### Deploy gitlab runner on k8s cluster
-use a config file with following contents, 
+use a config file with following contents
+
 https://gitlab.planetrover.ca/planetrover/knowledge/-/blob/master/files/values.yaml
+
 make sure replace the parameters in lines 68, 74
+
 Run following command to deploy the gitlab runner
+
 ```
 helm upgrade --install  --namespace gitlab-runner gitlab-runner -f values.yaml gitlab/gitlab-runner
 ```
@@ -55,3 +58,10 @@ test-job2:
 ```
 
 After commit this file, the gitlab ci should be triggered.
+
+# What's missing?
+
+Now the k8s, gitlab runner, and gitlab have already been setup in China internal network. However, since the China gitlab is 3 major versions behind Toronto gitlab, all the Toronto .gitlab-ci.yml scripts are not compatable in China gitlab.
+
+To solve this, we need to upgrade the China gitlab to v14.5.2
+
