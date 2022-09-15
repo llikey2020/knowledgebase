@@ -1,0 +1,206 @@
+The following command history from 192.168.5.56 (root user)
+
+
+```
+root@li-1:~# history
+    1  hostname
+    2  hostnamectl --help
+    3  hostnamectl  --transient --static --pretty set-hostname li-1
+    4  hostname
+    5  cat /etc/hosts
+    6  reboot
+    7  adduser test
+    8  apt update
+    9  apt dist-upgrade
+   10  reboot now
+   11  ls
+   12  apt install build-essential git chrony openssh-server python3-dev sudo
+   13  apt-get update
+   14  apt-get update --fix-missing
+   15  apt install build-essential git chrony openssh-server python3-dev sudo
+   16  ifconfig
+   17  git clone -b 22.1.1 https://opendev.org/openstack/openstack-ansible /opt/openstack-ansible
+   18  git config --global http.sslVerify false
+   19  git clone -b 22.1.1 https://opendev.org/openstack/openstack-ansible /opt/openstack-ansible
+   20  git clone -b 22.1.1 https://github.com/openstack/openstack-ansible.git /opt/openstack-ansible
+   21  cd /opt/l
+   22  cd /opt/
+   23  ls
+   24  git clone -b 22.1.1 https://github.com/openstack/openstack-ansible.git /opt/openstack-ansible
+   25  cd openstack-ansible/
+   26  ls
+   27  scripts/bootstrap-ansible.sh
+   28  vim
+   29  apt install vim
+   30  vim
+   31  cat ~/.ssh/id_rsa.pub
+   32  ssh li@192.168.5.57
+   33  ssh root@192.168.5.57
+   34  cd /opt/
+   35  ls
+   36  cd openstack-ansible/
+   37  ls
+   38  dc etc/
+   39  ls
+   40  cd etc/
+   41  ls
+   42  cp -f openstack_deploy/ /etc/openstack_deploy
+   43  cp -r openstack_deploy/ /etc/openstack_deploy
+   44  cd /etc/openstack_deploy
+   45  ls
+   46  cp openstack_user_config.yml.example openstack_user_config.yml
+   47  vim openstack_user_config.yml
+   48  vim /etc/network/interfaces
+   49  ifconfig
+   50  vim /etc/network/interfaces
+   51  vi /etc/network/interfaces
+   52  reboot
+   53  ifconfig
+   54  /etc/network/interfaces
+   55  vim /etc/network/interfaces
+   56  service networking restart
+   57  systemctl status networking.service
+   58  journalctl -xe
+   59  vim /etc/network/interfaces
+   60  apt install vlan bridge-utils
+   61  service networking restart
+   62  vim /etc/network/interfaces
+   63  service networking restart
+   64  vim /etc/network/interfaces
+   65  vim /etc/openstack_deploy/openstack_user_config.yml
+   66  vi /etc/openstack_deploy/openstack_user_config.yml
+   67  vim ~/.vimrc
+   68  vi /etc/openstack_deploy/openstack_user_config.yml
+   69  vim /etc/openstack_deploy/user_variables.yml
+   70  cd /opt/openstack-ansible/playbooks
+   71  ls
+   72  openstack-ansible setup-infrastructure.yml --syntax-check
+   73  openstack-ansible setup-hosts.yml
+   74  openstack-ansible setup-infrastructure.yml
+   75  openstack-ansible setup-infrastructure.yml --syntax-check
+   76  cd ..
+   77  ls
+   78  scripts/bootstrap-ansible.sh
+   79  cd /opt/openstack-ansible/playbooks
+   80  openstack-ansible setup-infrastructure.yml --syntax-check
+   81  vi /etc/openstack_deploy/openstack_user_config.yml
+   82  openstack-ansible setup-hosts.yml
+   83  vim /etc/network/interfaces
+   84  service networking restart
+   85  ls
+   86  ifconfig
+   87  vim /etc/network/interfaces
+   88  reboot
+   89  vim /etc/network/interfaces
+   90  service networking restart
+   91  ip route
+   92  ip route delete default via 172.29.236.1 dev br-mgmt
+   93  ifconfig
+   94  ip route
+   95  vim /etc/network/interfaces
+   96  service networking restart
+   97  ip toute
+   98  ip route
+   99  ip route delete default via 192.168.5.1 dev br-mgmt
+  100  ifconfig
+  101  apt-get install -y git sudo
+  102  vim /etc/network/interfaces
+  103  service networking restart
+  104  useradd -s /bin/bash -d /opt/stack -m stack
+  105  echo "stack ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+  106  su stack
+  107  export LIBGUESTFS_DEBUG=1 LIBGUESTFS_TRACE=1
+  108  guestfish --rw -a CentOS-7-x86_64-GenericCloud.qcow2
+  109  export LIBGUESTFS_DEBUG=1 LIBGUESTFS_TRACE=1
+  110  guestfish --rw -a CentOS-7-x86_64-GenericCloud.qcow2
+  111  ls
+  112  cd ~
+  113  ls
+  114  cd /var/log/
+  115  ls
+  116  systemctl list-unit-files --all | grep devstack
+  117  journalctl -f --unit devstack@h-api-cfn.service
+  118  su stack
+  119  service networking  restart
+  120  ifconfig
+  121  cd dev
+  122  sudo su stack
+  123  cd /var/log/
+  124  ls
+  125  mkdir magnum
+  126  cd magnum/
+  127  ifconfig
+  128  pwd
+  129  ls
+  130  cat /etc/resolv.conf
+  131  ifconfig
+  132  sudo ip netns list
+  133  sudo ip netns exe qrouter-41c27624-6918-40f1-8da0-4e0c95368e21 bash
+  134  sudo ip netns exe qrouter-41c27624-6918-40f1-8da0-4e0c95368e21 ifconfig
+  135  sudo ip netns exe qrouter-41c27624-6918-40f1-8da0-4e0c95368e21 'cat /etc/resolv.conf'
+  136  sudo ip netns exe qrouter-41c27624-6918-40f1-8da0-4e0c95368e21 bash
+  137  sudo ip netns exe qrouter-41c27624-6918-40f1-8da0-4e0c95368e21 bash
+  138  cd /etc/nova/
+  139  ls
+  140  vim nova.conf
+  141  systemctl list-unit-files --all | grep devstack
+  142  systemctl restart devstack@n-sch.service
+  143  ls
+  144  vim /etc/memcached.conf
+  145  vim  /var/log/memcached.log
+  146  vim /etc/memcached.conf
+  147  /etc/init.d/memcached restart
+  148  /etc/init.d/memcached status
+  149  /etc/init.d/memcached restart
+  150  vim /etc/memcached.conf
+  151  /etc/init.d/memcached restart
+  152  vim /opt/stack/requirements/upper-constraints.txt
+  153  /etc/init.d/memcached restart
+  154  vim /usr/bin/tunlrupdate.sh
+  155  vim /usr/bin/restart-memcached.sh
+  156  cd ~
+  157  vim memcached_log
+  158  vim /usr/bin/restart-memcached.sh
+  159  chmod +x  /usr/bin/restart-memcached.sh
+  160  /usr/bin/restart-memcached.sh
+  161  cat memcached_log
+  162  /usr/bin/restart-memcached.sh
+  163  vim memcached_log
+  164  vim /usr/bin/restart-memcached.sh
+  165  /usr/bin/restart-memcached.sh
+  166  cat memcached_log
+  167  vi memcached_log
+  168  sudo crontab -e
+  169  tail -f memcached_log
+  170  systemctl list-unit-files --all | grep devstack
+  171  sudo service apache2 restart
+  172  sudo crontab -e
+  173  /usr/bin/restart-memcached.sh
+  174  systemctl list-unit-files --all | grep devstack
+  175  systemctl status devstack@keystone.service
+  176  systemctl restart devstack@keystone.service
+  177  dh -h
+  178  du -h
+  179  dh -hs
+  180  df -hs
+  181  df -h
+  182  cd ~
+  183  kls
+  184  ls
+  185  cat memcached_log
+  186  sudo crontab -e
+  187  /usr/bin/restart-memcached.sh
+  188  systemctl list-unit-files --all | grep devstack
+  189  journalctl -f --unit devstack@magnum-api.service
+  190  mysql nova < openstack.sql
+  191  mysql -p nova < openstack.sql
+  192  mysql -p < openstack.sql
+  193  ls /usr/bin/
+  194  ls /usr/bin/ | grep mysql
+  195  ls /usr/bin/ | grep back
+  196  mysql -u root
+  197  mysql -u root -p
+  198  clear
+  199  history
+
+```
