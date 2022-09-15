@@ -2,6 +2,30 @@
 Please refer to document https://gitlab.planetrover.ca/planetrover/knowledge/-/blob/master/onboarding/OpenStack.md
 For regular usage of openstack
 
+# How to run openstack commands?
+login to the control plane server and restart all the services
+```
+> ssh li@192.168.5.56         #ask for password from sys admin
+> sudo su stack
+> cd devstack/
+> source openrc admin admin
+```
+## Get host list
+```
+$  openstack host list
++--------------+-----------+----------+
+| Host Name    | Service   | Zone     |
++--------------+-----------+----------+
+| li-1         | scheduler | internal |
+| li-1         | conductor | internal |
+| li-1         | conductor | internal |
+| planetrover2 | compute   | nova     |
+| planetrover1 | compute   | nova     |
++--------------+-----------+----------+
+```
+
+
+
 # What if something went wrong?
 ## Restart all the OpenStack services
 login to the control plane server and restart all the services
