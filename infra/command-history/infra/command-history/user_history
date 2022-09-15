@@ -1,0 +1,210 @@
+The following command history from 192.168.5.56 (li user)
+```
+    1  ip a
+    2  ping google.com
+    3  sudo apt install ssh
+    4  ip a
+    5  ping 192.168.5.47
+    6  ping 192.168.5.27
+    7  ip a
+    8  sudo -i
+    9  ip a
+   10  clear
+   11  exit
+   12  adduser test
+   13  sudo -i
+   14  ls
+   15  ifconfig
+   16  sudo apt install net-tools
+   17  ifconfig
+   18  ls
+   19  sudo -i
+   20  sudo -i
+   21  ls
+   22  ifconfig
+   23  sudo -i
+   24  ifconfig
+   25  iproute
+   26  ip route
+   27  sudo ip route delete default via 172.29.236.1 dev br-mgmt
+   28  ip route
+   29  vim /etc/network/interfaces
+   30  ip route
+   31  ifconfig
+   32  service networking restart
+   33  ifconfig
+   34  ip route
+   35  sudo -i
+   36  ifconfig
+   37  sudo -i
+   38  su stack
+   39  sudo su stack
+   40  ssh test@192.168.6.236
+   41  ssh root@192.168.6.236
+   42  ssh test@192.168.6.236
+   43  ssh test@192.168.5.56
+   44  ping 192.168.6.243
+   45  ping 192.168.6.94
+   46  vim ~/.ssh/authorized_keys
+   47  sudo su stack
+   48  ls
+   49  ssh li@ssh li@192.168.5.11
+   50  ssh li@ssh li@192.168.5.200
+   51  sudo su stack
+   52  ls
+   53  sudo su stack
+   54  ls
+   55  ssh -i ./test_cluster_ca.pem fedora@192.168.6.109
+   56  sudo su stack
+   57  ssh -i ./test_cluster_ca.pem root@192.168.6.7
+   58  ping 192.168.6.7
+   59  ls
+   60  ssh -i ./test_cluster_ca.pem fedora@192.168.6.116
+   61  cat test_cluster_ca.pem
+   62  vim test_cluster_ca.pem
+   63  ssh -i ./test_cluster_ca.pem fedora@192.168.6.116
+   64  ls
+   65  sudo devstack@h-api-cfn.service                      enabled
+   66  sudo journalctl -f --unit devstack@h-eng.service
+   67  ssh -i ./test_cluster_ca.pem fedora@192.168.6.67
+   68  ssh -i ./test_cluster_ca.pem core@192.168.6.67
+   69  ssh -i ./cluster_key.pem core@192.168.6.67
+   70  ssh -i ./test_cluster_ca.pem core@192.168.6.67
+   71  ssh -i ./cluster_key.pem root@192.168.6.46
+   72  chmod 600 cluster_key.pem
+   73  ssh -i ./cluster_key.pem root@192.168.6.46
+   74  ssh -i ./cluster_key.pem core@192.168.6.46
+   75  ls
+   76  sudo su
+   77  sudo su -i
+   78  sudo su root
+   79  sudo su stack
+   80  ls
+   81  sudo su root
+   82  ssh -i ./cluster_key.pem core@192.168.6.28
+   83  ssh -i ./cluster_key.pem core@192.168.6.28
+   84  sudo su root
+   85  sudo su stack
+   86  ssh -i ./cluster_key.pem core@192.168.6.38
+   87  ifconfig
+   88  ls
+   89  sudo su stack
+   90  sudo su stack
+   91  ls
+   92  sudo su stack
+   93  sudo su root
+   94  sudo su stack
+   95  sudo su stack
+   96  vim test_cluster_ca.pem
+   97  rm -rf test_cluster_ca.pem
+   98  vim test_cluster_ca.pem
+   99  chmod 600 test_cluster_ca.pem
+  100  ssh -i ./test_cluster_ca.pem core@192.168.6.93
+  101  vim key.pem
+  102  chmod 600 key.pem
+  103  ssh -i ./key.pem core@192.168.6.93
+  104  ssh -i ./key.pem core@192.168.6.19
+  105  ssh -i ./key.pem root@192.168.6.19
+  106  ssh -i ./key.pem fedora@192.168.6.19
+  107  ssh  fedora@192.168.6.19
+  108  ssh -i ./key.pem fedora@192.168.6.19
+  109  rm key.pem
+  110  vim key.pem
+  111  chmod 600 key.pem
+  112  ls
+  113  ssh -i ./key.pem fedora@192.168.6.114
+  114  sudo su root
+  115  cat /etc/resolv.conf
+  116  ifconfig
+  117  mkdir -p ~/clusters/kubernetes-cluster
+  118  sudo su stack
+  119  ls
+  120  ssh -i key.pem core@192.168.6.44
+  121  ssh -i key.pem core@192.168.6.24
+  122  ssh -i key.pem core@192.168.6.24
+  123  ssh -i key.pem core@192.168.6.34
+  124  sudo su stack
+  125  ls
+  126  ssh -i key.pem core@192.168.6.24
+  127  cat key.pem
+  128  ssh -i key.pem core@192.168.6.16
+  129  ls
+  130  ssh -i key.pem root@192.168.6.7
+  131  ping 192.168.6.7
+  132  ping 192.168.6.25
+  133  ping 192.168.6.120
+  134  ping 192.168.6.7
+  135  ping 192.168.6.113
+  136  ping 192.168.6.7
+  137  ssh -i key.pem root@192.168.6.120
+  138  ssh -i key.pem centos@192.168.6.120
+  139  ping 192.168.6.120
+  140  ls
+  141  sudo su root
+  142  sudo su stack
+  143  sudo su stack
+  144  sudo su stack
+  145  sudo su stack
+  146  sudo su root
+  147  sudo su stack
+  148  sudo su root
+  149  ls
+  150  sudo su stack
+  151  ls
+  152  sudo su root
+  153  ls
+  154  sudo su stack
+  155  clear
+  156  ip a
+  157  clear
+  158  cd
+  159  openstack list
+  160  openstack --help
+  161  cd
+  162  clear
+  163  ls -lrt
+  164  cat restart_services.sh
+  165  clear
+  166  ls -lrt
+  167  tail -f openstack.sql
+  168  clear
+  169  cd clusters/
+  170  ls -lrt
+  171  cd kubernetes-cluster/
+  172  ls
+  173  cd ..
+  174  cd
+  175  ls -lart
+  176  clear
+  177  cd
+  178  ls -lrt
+  179  cd /etc/
+  180  ls
+  181  ls -lrt
+  182  cd
+  183  clear
+  184  ls -lrt
+  185  openstack help
+  186  openstack help | grep list
+  187  openstack rule list
+  188  openstack  alarm list
+  189  openstack baremetal allocation list
+  190  openstack baremetal node list
+  191  ls -lrt
+  192  openstack baremetal node list
+  193  openstack host list
+  194  pwd
+  195  ls -lrt
+  196  vi restart_services.sh
+  197  cd Public/
+  198  ls
+  199  cd ../Downloads/
+  200  ls -lrt
+  201  cd
+  202  ls -lrt
+  203  history
+  204  sudo su stack
+  205  ls -lrt
+  206  history
+
+```
