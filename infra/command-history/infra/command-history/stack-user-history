@@ -1,0 +1,947 @@
+command history from 192.168.5.56 (stack user)
+
+
+```
+    1  ssh-keygen
+    2  cat /opt/stack/.ssh/id_rsa.pub
+    3  ifconfig
+    4  ssh stack@192.168.5.57
+    5  cd ~
+    6  ls
+    7  git clone https://opendev.org/openstack/devstack
+    8  cd ~
+    9  ls
+   10  cd devstack/
+   11  ls
+   12  git status
+   13  git branch -a
+   14  git checkout -b victoria remotes/origin/stable/victoria
+   15  git status
+   16  vim local.conf
+   17  ifconfig
+   18  vim local.conf
+   19  ./stack.sh
+   20  ls
+   21  ls  /opt/stack/nova/bin/nova-manage
+   22  ls  /opt/stack/nova/bin/
+   23  ls  /opt/stack/nova/
+   24  cd ..
+   25  ls
+   26  cd devstack/
+   27  ./stack.sh
+   28  vim /opt/stack/devstack/tools/install_pip.sh
+   29  vim /opt/stack/logs/stack.sh.log.2021-04-20-123112
+   30  vim local.conf
+   31  vim /opt/stack/logs/stack.sh.log.2021-04-20-123112
+   32  ./stack.sh
+   33  nova-manage
+   34  /opt/stack/logs/stack.sh.log.2021-04-20-123352
+   35  vim /opt/stack/logs/stack.sh.log.2021-04-20-123352
+   36  ls /opt/stack/devstack/lib/nova
+   37  vim /opt/stack/logs/stack.sh.log.2021-04-20-123352
+   38  vim local.conf
+   39  ./stack.sh
+   40  ls /opt/stack/.cache/
+   41  sudo chown stack /opt/stack/.cache/
+   42  ls /opt/stack/.cache/
+   43  ./stack.sh
+   44  vim inc/python
+   45  ./stack.sh
+   46  ls
+   47  ifconfig
+   48  ls
+   49  ifconfig
+   50  ./stack.sh
+   51  ping 192.168.233.237
+   52  git status
+   53  git diff
+   54  ip a
+   55  ip r
+   56  ping 192.168.6.1
+   57  ip r add default via 192.168.6.1
+   58  ip
+   59  ip a
+   60  exit
+   61  ip r
+   62  ip a
+   63  ping 192.168.6.1
+   64  ip r
+   65  ip r add default via 192.168.6.100
+   66  ip r add default via 192.168.6.90
+   67  arp -an
+   68  exit
+   69  ip a
+   70  ip r
+   71  ping 192.168.6.1
+   72  ip a
+   73  ping 192.168.6.243
+   74  ssh 192.168.6.243
+   75  ip a
+   76  ping 192.168.6.243
+   77  cd ~
+   78  ls
+   79  cd /var/
+   80  ls
+   81  cd log/
+   82  ls
+   83  cd  /opt/stack/logs
+   84  ls
+   85  ll
+   86  sudo journalctl -u devstack@n-cpu
+   87  screen -x stack
+   88  journalctl -f --unit devstack@n-cpu.service
+   89  systemctl list-unit-files --all
+   90  systemctl list-unit-files --all | grep devstack
+   91  journalctl -f --unit devstack@c-sch.service
+   92  systemctl list-unit-files --all | grep devstack
+   93  journalctl -f --unit devstack@n-sch.service
+   94  cd ..
+   95  ls
+   96  cd devstack/
+   97  ls
+   98  vim openrc
+   99  source openrc admin admin
+  100  openstack flavor list
+  101  nova-manage cell_v2 discover_hosts --verbose
+  102  cd ..
+  103  mkdir images
+  104  cd images/
+  105  wget http://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud.qcow2
+  106  openstack image create --public > --disk-format qcow2 --container-format bare > --file CentOS-7-x86_64-GenericCloud.qcow2
+  107  openstack image create --public --disk-format qcow2 --container-format bare --file ./CentOS-7-x86_64-GenericCloud.qcow2
+  108  openstack image create --public --disk-format qcow2 --container-format bare --file ./CentOS-7-x86_64-GenericCloud.qcow2 --image-name CentOS-7-x86_64
+  109  glance image-list
+  110  glance image-create --disk-format qcow2 --container-format bare --visibility public --file ./CentOS-7-x86_64-GenericCloud.qcow2 --name CentOS-7-x86_64
+  111  ls
+  112  rm -rf --disk-format
+  113  rm -rf "--disk-format"
+  114  rm -rf \-\-disk-format
+  115  ll -l
+  116  ls
+  117  cd ..
+  118  ls
+  119  ifconfig
+  120  ping 192.168.6.92
+  121  br-ex: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+  122  ip route
+  123  trace route
+  124  traceroute
+  125  apt install traceroute
+  126  sudo apt install traceroute
+  127  apt install traceroute
+  128  traceroute
+  129  traceroute 192.168.6.92
+  130  ping 192.168.6.92
+  131  traceroute 192.168.6.92
+  132  ping 192.168.6.64
+  133  ping 192.168.6.92
+  134  traceroute 192.168.6.92
+  135  ip route
+  136  ping 192.168.6.64
+  137  ping 192.168.6.92
+  138  ip route
+  139  ping 192.168.6.11
+  140  traceroute 192.168.6.11
+  141  ifconfig
+  142  traceroute 192.168.6.92
+  143  ip route
+  144  ip route add 192.168.6.92/32 via 192.168.6.1
+  145  sudo ip route add 192.168.6.92/32 via 192.168.6.1 dev br-ex
+  146  ping 192.168.6.92
+  147  traceroute 192.168.6.92
+  148  ip route
+  149  ping 192.168.6.92
+  150  ping 192.168.6.52
+  151  ping 192.168.6.11
+  152  ip route
+  153  sudo ip route add 192.168.6.11 via 192.168.5.1 dev ens160
+  154  ping 192.168.6.11
+  155  ip route
+  156  ls
+  157  ifconfig
+  158  ping 192.168.6.52
+  159  ip route
+  160  sudo ip route delete 192.168.6.92 via 192.168.6.1 dev br-ex
+  161  sudo ip route add 192.168.6.52 via 192.168.6.64 dev br-ex
+  162  ping 192.168.6.52
+  163  ping 192.168.6.64
+  164  sudo ip route add  via 192.168.6.64 dev br-ex
+  165  sudo ip route add 192.168.233.237 via 192.168.6.64 dev br-ex
+  166  ping 192.168.233.237
+  167  ip route
+  168  ping 192.168.6.52
+  169  ifconfig
+  170  vim /etc/network/interfaces
+  171  brctl show
+  172  iptable show
+  173  iptables show
+  174  iptables -nvL
+  175  sudo iptables -nvL
+  176  ping 192.168.6.64
+  177  ping 192.168.6.1
+  178  ip route
+  179  sudo ip route add 192.168.6.0/25 via 192.168.6.1 dev br-ex
+  180  ping 192.168.6.64
+  181  ifconfig
+  182  ip route
+  183  sudo ip route delete 192.168.6.52 via 192.168.6.64 dev br-ex
+  184  sudo ip route delete 192.168.6.11 via 192.168.5.1 dev ens160
+  185  ip route
+  186  iconfig
+  187  ifconfig
+  188  ls
+  189  ip netns
+  190  ip netns exe qrouter-85356898-7b72-4cba-becf-a1d6ca77289d bash
+  191  sudo ip netns exe qrouter-85356898-7b72-4cba-becf-a1d6ca77289d bash
+  192  ifconfig br-ex
+  193  sudo ip netns exe qrouter-85356898-7b72-4cba-becf-a1d6ca77289d bash
+  194  ls
+  195  neutron net-list
+  196  neutron subnet-show a6e8a5f3-a4f9-46ac-b8bf-7022aaf46d01
+  197  ifconfig br-ex
+  198  sudo ip netns exe qrouter-85356898-7b72-4cba-becf-a1d6ca77289d bash
+  199  ip a
+  200  neutron subnet-show a6e8a5f3-a4f9-46ac-b8bf-7022aaf46d01
+  201  neutron subnet-delete a6e8a5f3-a4f9-46ac-b8bf-7022aaf46d01
+  202  neutron port-list|grep a6e8a
+  203  neutron floatingip-delete 36f9c04d-2882-450b-8c46-aae09b4e4b34
+  204  neutron subnet-delete a6e8a5f3-a4f9-46ac-b8bf-7022aaf46d01
+  205  neutron port-list|grep a6e8a
+  206  neutron port-show 8eae9d6f-254e-4975-8bed-92ab28567bd5
+  207  neutron router-show 34a57dbe-da0e-4d9b-8559-aa99887971ff
+  208  neutron port-delete 8eae9d6f-254e-4975-8bed-92ab28567bd5
+  209  neutron router-gateway-clear 34a57dbe-da0e-4d9b-8559-aa99887971ff
+  210  neutron subnet-delete a6e8a5f3-a4f9-46ac-b8bf-7022aaf46d01
+  211  neutron net-list
+  212  neutron subnet-create 192.168.6.0/24 1d06b59d-6674-4207-bf25-2f71adf69491
+  213  neutron subnet-create 1d06b59d-6674-4207-bf25-2f71adf69491 192.168.6.0/24
+  214  sudo ip netns exe qrouter-85356898-7b72-4cba-becf-a1d6ca77289d bash
+  215  ifconfig br-ex
+  216  ovs-vsctl show
+  217  sudo ovs-vsctl show
+  218  ovs-ofctl dump-flows br-ex
+  219  sudo ovs-ofctl dump-flows br-ex
+  220  sudo ovs-ofctl dump-flows br-int
+  221  sudo tcpdump -nei br-int
+  222  sudo ifconfig br-int up
+  223  sudo ifconfig br-ex up
+  224  sudo ovs-vsctl show
+  225  sudo tcpdump -nei br-int
+  226  sudo tcpdump -nei br-ex
+  227  ifconfig br-ex
+  228  ifconfig br-ex 192.168.6.1/24
+  229  sudo ifconfig br-ex 192.168.6.1/24
+  230  sudo tcpdump -nei br-ex
+  231  ping 192.168.5.57
+  232  ping  192.168.6.243
+  233  sudo iptables -t nat -A POSTROUTING -s 192.168.6.0/24 SNAT --to 192.168.5.56
+  234  sudo iptables -t nat -A POSTROUTING -s 192.168.6.0/24 -j SNAT --to 192.168.5.56
+  235  ping  192.168.6.243
+  236  ssh cirros@192.168.6.243
+  237  ping 192.168.6.180
+  238  sudo ip netns exe qrouter-85356898-7b72-4cba-becf-a1d6ca77289d bash
+  239  neutron security-group-list
+  240  nova list --all-tenants
+  241  neutron port-list --device-id 03fb123b-3616-44d6-93ea-a79224568232
+  242  neutron port-show e877d53c-2f98-4ea8-8512-f3b72ef3b1e2
+  243  neutron security-group-rule-create --protocol icmp 6ad0c02f-0fe9-4078-8d71-ad0b9ff2b8e0
+  244  sudo ip netns exe qrouter-85356898-7b72-4cba-becf-a1d6ca77289d bash
+  245  ping 192.168.6.243
+  246  ping 192.168.6.94
+  247  cd ~
+  248  ls
+  249  source openrc admin admin
+  250  cd devstack/
+  251  source openrc admin admin
+  252  cd ~
+  253  ~/.ssh/authorized_keys
+  254  vim ~/.ssh/authorized_keys
+  255  sudo ip tables -save -t nat
+  256  sudo iptables -save -t nat
+  257  sudo iptables-save -t nat
+  258  ping 192.168.6.243
+  259  ping 192.168.6.94
+  260  ping 192.168.6.243
+  261  ping 192.168.6.22
+  262  ping 192.168.6.11
+  263  ping 192.168.6.243
+  264  ls
+  265  cd devstack/
+  266  ls
+  267  source openrc admin admin
+  268  nova-manage cell_v2 discover_hosts --verbose
+  269  vim /etc/network/interfaces
+  270  ifconfig
+  271  ping 192.168.6.243
+  272  ping 192.168.6.94
+  273  ping 192.168.6.243
+  274  sudo tcpdump -nei br-ex
+  275  sudo ovs-vsctl show
+  276  ip a |less
+  277  ip a |grep ens
+  278  sudo tcpdump -nei ens160 icmp
+  279  sudo tcpdump -nei ens160 host 192.168.6.243
+  280  ping 192.168.6.243
+  281  arp -an|grep 243
+  282  sudo tcpdump -nei br-ex host 192.168.6.243
+  283  ip r
+  284  ifconfig  br-ex
+  285  find / -name ip_forward
+  286  sudo find / -name ip_forward
+  287  sudo find /proc -name ip_forward
+  288  sudo cat /proc/sys/net/ipv4/ip_forward
+  289  sudo service stop firewalld
+  290  sudo ufw disable
+  291  sudo service firewalld status
+  292  sudo iptables-save
+  293  sudo iptables-save|grep icmp -i
+  294  ifconfig virbr0
+  295  sudo iptables-save -t nat|grep icmp -i
+  296  sudo iptables -vnL|grep icmp -i
+  297  ip r
+  298  ifconfig|less
+  299  ping 192.168.6.243
+  300  ip rule
+  301  ip r
+  302  sudo tcpdump -nei br-ex host 192.168.6.243
+  303  sudo tcpdump -nei ens160 host 192.168.6.243
+  304  ifconfig
+  305  ifconfig ens192
+  306  sudo ifconfig br-ex 0
+  307  sudo ifconfig ens192 0
+  308  sudo ovs-vsctl add-port br-ex ens192
+  309  sudo ovs-vsctl show
+  310  ifconfig br-ex
+  311  sudo ifconfig br-ex 192.168.6.1/24
+  312  ping 192.168.6.243
+  313  sudo tcpdump -nei ens192 host 192.168.6.243
+  314  sudo tcpdump -nei ens192 host 192.168.6.1
+  315  sudo tcpdump -nei br-ex host 192.168.6.1
+  316  sudo tcpdump -nei any host 192.168.6.1
+  317  ip a |grep 192.168.6.1
+  318  ip a |less
+  319  sudo tcpdump -nei ens160 host 192.168.6.1
+  320  sudo ovs-vsctl sho
+  321  ping 192.168.6.94
+  322  ping 192.168.6.243
+  323  ping 192.168.6.94
+  324  sudo iptables-save|less
+  325  ping 192.168.6.94
+  326  ping 192.168.6.243
+  327  ping 192.168.6.236
+  328  arp -f
+  329  arp -an
+  330  ifconfig br-ex
+  331  arp -s 192.168.6.1
+  332  arp -s 192.168.6.1 00:0c:29:d3:23:33
+  333  sudo arp -s 192.168.6.1 00:0c:29:d3:23:33
+  334  sudo arp -s  00:0c:29:d3:23:33 192.168.6.1
+  335  sudo arp -s 192.168.6.1 00:0c:29:d3:23:33
+  336  cd ..
+  337  ls
+  338  cd imga
+  339  openstack flavor list
+  340  sudo apt-get -y install libguestfs-tools
+  341  ls
+  342  cd images/
+  343  ls
+  344  virt-customize -a  CentOS-7-x86_64-GenericCloud.qcow2 --root-password password:password
+  345  virt-customize -v -x -a  CentOS-7-x86_64-GenericCloud.qcow2 --root-password password:password
+  346  sudo virt-customize -v -x -a  CentOS-7-x86_64-GenericCloud.qcow2 --root-password password:password
+  347  ls
+  348  ll -la
+  349  glance image-create --disk-format qcow2 --container-format bare --visibility public --file ./CentOS-7-x86_64-GenericCloud.qcow2 --name CentOS-7-x86_64
+  350  ssh root@192.168.6.236
+  351  ping 192.168.6.236
+  352  ssh root@192.168.6.236
+  353  ssh test@192.168.6.236
+  354  ssh cirros@192.168.6.94
+  355  ping 192.168.6.94
+  356  neutron security-group-rule-create --protocol tcp 6ad0c02f-0fe9-4078-8d71-ad0b9ff2b8e0
+  357  sudo apt update
+  358  ping ermission denied (publickey,gssapi-keyex,gssapi-with-mic).
+  359  ping security.ubuntu.com
+  360  systemd-resolve --status
+  361  ssh test@192.168.6.145
+  362  cd ~
+  363  ls
+  364  cd devstack/
+  365  ls
+  366  git diff
+  367  vim /lib/systemd/system/rtslib-fb-targetctl.service
+  368  ls
+  369  git status
+  370  git diff
+  371  vim local.conf
+  372  mysql
+  373  sudo mysql
+  374  cd ~
+  375  cd ~
+  376  ls
+  377  cd devstack/
+  378  ls
+  379  vim local.conf
+  380  ifconfig
+  381  vim local.conf
+  382  ./unstack.sh ls
+  383  ifconfig
+  384  ./stack.sh
+  385  git status
+  386  cd ..
+  387  ls
+  388  cd heat/
+  389  ls
+  390  git status
+  391  cd ..
+  392  ls
+  393  cd heat/
+  394  ls
+  395  git status
+  396  git branch -a
+  397  git checkout -b victoria remotes/origin/stable/victoria
+  398  cd ..
+  399  ls
+  400  cd magnum
+  401  lsd
+  402  cd ..
+  403  ls
+  404  cd devstack/
+  405  ls
+  406  vim local.conf
+  407  ./unstack.sh
+  408  ./stack.sh
+  409  source openrc admin admin
+  410  neutron security-group-rule-create --protocol icmp afaa6204-73bd-4aa6-bfd4-96b2cf778948
+  411  neutron security-group-rule-create --protocol tcp afaa6204-73bd-4aa6-bfd4-96b2cf778948
+  412  ping 192.168.6.18
+  413  nova-manage cell_v2 discover_hosts --verbose
+  414  sudo mysql
+  415  su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
+  416  sudo nova-manage cell_v2 discover_hosts --verbose
+  417  ./unstack.sh
+  418  sudo virsh list
+  419  ./clean.sh
+  420  ./stack.sh
+  421  neutron security-group-rule-create --protocol icmp a3406a28-385d-4b16-919f-747165e0855c
+  422  neutron security-group-rule-create --protocol tcp a3406a28-385d-4b16-919f-747165e0855c
+  423  ping
+  424  192.168.6.11
+  425  ping
+  426  192.168.6.11
+  427  ping 192.168.6.11
+  428  ping 192.168.6.55
+  429  sudo nova-manage cell_v2 discover_hosts --verbose
+  430  openstack compute service list --service nova-compute
+  431  su -s /bin/sh -c "nova-manage cell_v2 discover_hosts --verbose" nova
+  432  nova-manage cell_v2 discover_hosts --verbose
+  433  openstack compute service list --service nova-compute
+  434  nova-manage cell_v2 discover_hosts
+  435  nova-manage host list
+  436  nova-manage discover_hosts
+  437  nova-manage cell_v2 discover_hosts
+  438  nova-manage cell_v2 discover_hosts --verbose
+  439  vim local.conf
+  440  nova-manage cell_v2 discover_hosts --verbose
+  441  cd ..
+  442  ls
+  443  cd images/
+  444  ls
+  445  cd ..
+  446  ls
+  447  mkdir img
+  448  cd im
+  449  cd img/
+  450  mv ../images/CentOS-7-x86_64-GenericCloud.qcow2 .
+  451  cd ..
+  452  ls
+  453  rm -rf images/
+  454  cd img/
+  455  ls
+  456  ll
+  457  guestfish
+  458  guestfish -rw -a CentOS-7-x86_64-GenericCloud.qcow2
+  459  guestfish --rw -a CentOS-7-x86_64-GenericCloud.qcow2
+  460  export LIBGUESTFS_DEBUG=1 LIBGUESTFS_TRACE=1
+  461  guestfish --rw -a CentOS-7-x86_64-GenericCloud.qcow2
+  462  sudo guestfish --rw -a CentOS-7-x86_64-GenericCloud.qcow2
+  463  sudo su root
+  464  ls
+  465  openstack image create --public --disk-format qcow2 --container-format bare --file CentOS-7-x86_64-GenericCloud.qcow2 CentOS-7-x86_64
+  466  ping 192.168.6.43
+  467  ssh root@192.168.6.43
+  468  ssh test@192.168.6.43
+  469  sudo su root
+  470  openstack image create --public --disk-format qcow2 --container-format bare --file CentOS-7-x86_64-GenericCloud.qcow2 CentOS-7-x86_64
+  471  ifconfig
+  472  ping 192.168.6.43
+  473  ifconfig | grep 192.168.6
+  474  ip route
+  475  cd ~
+  476  cd devstack/
+  477  ls
+  478  source openrc admin admin
+  479  openstack coe service list
+  480  ls ~/.ssh/id_rsa.pub
+  481  cat ~/.ssh/id_rsa.pub
+  482  mkdir ~/ssh_key
+  483  cd ~/ssh_key/
+  484  openstack keypair create --public-key id_rsa.pub mykey
+  485  openstack keypair create --public-key ~/.ssh/id_rsa.pub mykey
+  486  ls
+  487  cat ~/.ssh/id_rsa.pub
+  488  cp cat ~/.ssh/id_rsa.pub .
+  489  cp  ~/.ssh/id_rsa.pub .
+  490  ls
+  491  ping 192.168.6.29
+  492  ssh fedora@192.168.6.109
+  493  ls
+  494  cat id_rsa.pub
+  495  vim test_cluster_ca.pem
+  496  ssh -i ./test_cluster_ca.pem fedora@192.168.6.109
+  497  chmod 600
+  498  chmod 600 test_cluster_ca.pem
+  499  ssh -i ./test_cluster_ca.pem fedora@192.168.6.109
+  500  vim test_cluster_ca.pem
+  501  ssh -i ./test_cluster_ca.pem fedora@192.168.6.109
+  502  vim test_cluster_ca.pem
+  503  cd
+  504  ls
+  505  cd ~
+  506  ls
+  507  cd devstack/
+  508  ls
+  509  source openrc admin admin
+  510  ls
+  511  openstack quota show --default
+  512  cd ~
+  513  ls
+  514  cd heat/
+  515  ls
+  516  git status
+  517  ls
+  518  git status
+  519  pwd
+  520  cd ~
+  521  ls
+  522  cd devstack/
+  523  ls
+  524  source openrc admin admin
+  525  openstack coe cluster template list
+  526  openstack coe cluster template show test
+  527  cd ~
+  528  ls
+  529  cd magnum/magnum
+  530  ls
+  531  cd drivers/
+  532  ls
+  533  vim k8s_fedora_coreos_v1/
+  534  cd  k8s_fedora_coreos_v1/
+  535  ls
+  536  cd ../../..
+  537  ls
+  538  git statius
+  539  git status
+  540  cd ..
+  541  ls
+  542  cd devstack/
+  543  ls
+  544  git status
+  545  vim local.conf
+  546  cd ..
+  547  cd heat/
+  548  ls
+  549  git status
+  550  cd ..
+  551  ls
+  552  cd magnum
+  553  ls
+  554  git status
+  555  git branch -a
+  556  git checkout -b victoria remotes/origin/stable/victoria
+  557  cd ..
+  558  ls
+  559  cd devstack/
+  560  ls
+  561  ./unstack.sh
+  562  cd ~
+  563  cd devstack/
+  564  ls
+  565  source openrc admin admin
+  566  openstack coe cluster list
+  567  openstack coe cluster show test_cluster
+  568  openstack coe cluster template show test
+  569  sudo ip netns exe 8d8345c0-e8a8-4f75-b59a-8582824dc1a2 bash
+  570  sudo ip netns exe 18bafa1c-6f49-4034-9fa2-5d3cd2950b9f bash
+  571  sudo ip netns exe 196e5c61-25a6-4b6e-92ef-7bac8ee0c07b bash
+  572  sudo ip netns exe qrouter-196e5c61-25a6-4b6e-92ef-7bac8ee0c07b bash
+  573  sudo ip netns exe qrouter-8d8345c0-e8a8-4f75-b59a-8582824dc1a2 bash
+  574  sudo ip netns exe qrouter-3e821596-a103-4e7a-90f9-e5356ece1103 bash
+  575  cd ~
+  576  ls
+  577  cd magnum
+  578  ls
+  579  git status
+  580  sudo systemctl status devstack@magnum-api.service
+  581  sudo journalctl -xe
+  582  f
+  583  cd ~
+  584  ls
+  585  cd devstack/
+  586  ls
+  587  vim local.conf
+  588  ifconfig
+  589  vim local.conf
+  590  vim
+  591  vim /etc/network/interfaces
+  592  ifconfig
+  593  vim /etc/network/interfaces
+  594  vim local.conf
+  595  ls
+  596  ifconfig
+  597  ls
+  598  vim local.conf
+  599  ./unstack.sh
+  600  ./stack.sh
+  601  ./unstack.sh
+  602  ./stack.sh
+  603  vim local.conf
+  604  ./unstack.sh
+  605  ./stack.sh
+  606  ./unstack.sh
+  607  ./stack.sh
+  608  vim /etc/systemd/system/devstack@magnum-api.service
+  609  /usr/local/bin/magnum-api
+  610  ./clean.sh
+  611  ls
+  612  cd ~
+  613  ls
+  614  ip route
+  615  ifconfig
+  616  ls
+  617  cd devstack/
+  618  ls
+  619  vim local.conf
+  620  ifconfig
+  621  vim local.conf
+  622  vim /etc/network/interfaces
+  623  sudo vim /etc/network/interfaces
+  624  sudo  -i
+  625  cd ~
+  626  sudo systemctl start devstack@magnum-api.service
+  627  sudo journalctl -xe
+  628  sudo systemctl start devstack@magnum-api.service
+  629  vim /etc/magnum/magnum.conf
+  630  cd devstack/
+  631  ls
+  632  vim local.conf
+  633  cd ../
+  634  cd magnum-ui/
+  635  ls
+  636  git status
+  637  git branch -a
+  638  git checkout -b victoria remotes/origin/stable/victoria
+  639  cd ..
+  640  l
+  641  cd devstack/
+  642  ls
+  643  cd lova
+  644  cd loca
+  645  vim local.conf
+  646  cd ..
+  647  cd img/
+  648  ls
+  649  wget https://download.fedoraproject.org/pub/alt/atomic/stable/Fedora-Atomic-27-20180419.0/CloudImages/x86_64/images/Fedora-Atomic-27-20180419.0.x86_64.qcow2
+  650  cd /var/log/
+  651  ls
+  652  cd magnum/
+  653  ls
+  654  cd ..
+  655  ls
+  656  sudo lsof -i -P -n | grep LISTEN
+  657  sudo lsof -i -P -n | grep LISTEN | grep 9511
+  658  kill -9 31212
+  659  sudo kill -9 31212
+  660  ps -ef | grep magnum-ap
+  661  sudo kill -9 31262
+  662  sudo kill -9 31212
+  663  ps -ef | grep magnum-ap
+  664  sudo lsof -i -P -n | grep LISTEN | grep 9511
+  665  ps -ef | grep magnum-ap
+  666  sudo lsof -i -P -n | grep LISTEN | grep 9511
+  667  cd ~
+  668  ls
+  669  cd devstack/
+  670  ls
+  671  source openrc admin admin
+  672  neutron security-group-rule-create --protocol icmp 3ff9a913-d5f6-498f-8fbd-21f9c2b7cfb8
+  673  neutron security-group-rule-create --protocol tcp 3ff9a913-d5f6-498f-8fbd-21f9c2b7cfb8
+  674  ping 192.168.6.4
+  675  nova-manage cell_v2 discover_hosts --verbose
+  676  cd ../magnum
+  677  ls
+  678  git status
+  679  cd ~
+  680  cd devstack/
+  681  ls
+  682  source openrc admin admin
+  683  nova-manage cell_v2 discover_hosts --verbose
+  684  cd ../
+  685  ls
+  686  cd img/
+  687  ls
+  688  openstack image create                       --disk-format=qcow2                       --container-format=bare                       --file=Fedora-Atomic-27-20180419.0.x86_64.qcow2                      --property os_distro='fedora-atomic'                       fedora-atomic-latest
+  689  ls
+  690  cd ~/devstack/
+  691  source openrc admin admin
+  692  mkdir -p ~/clusters/kubernetes-cluster
+  693  $(openstack coe cluster config kubernetes-cluster --dir ~/clusters/kubernetes-cluster)
+  694  $(openstack coe cluster config test_cluster --dir ~/clusters/kubernetes-cluster)
+  695  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  696  sudo curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  697  ls /bin/linux/amd64/kubectl
+  698  ls
+  699  ls | grep kube
+  700  sudo rm -rf kubectl
+  701  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  702  cd ..
+  703  ls
+  704  cd clusters/
+  705  ls
+  706  kubectl
+  707  cd kubernetes-cluster/
+  708  ls
+  709  pwd
+  710  export KUBECONFIG=/opt/stack/clusters/kubernetes-cluster/config
+  711  kubectl -n kube-system get po
+  712  vim /opt/stack/clusters/kubernetes-cluster/config
+  713  ls
+  714  ls config
+  715  vim config
+  716  cd ~/devstack/
+  717  ls
+  718  source openrc admin admin
+  719  cd ..
+  720  ls
+  721  cd clusters/
+  722  ls
+  723  cd kubernetes-cluster/
+  724  ls
+  725  vim config
+  726  cd ~
+  727  ls
+  728  cd devstack/
+  729  ls
+  730  vim local.conf
+  731  cd ~
+  732  ls
+  733  cd devstack/
+  734  ls
+  735  source openrc admin admin
+  736  openstack coe cluster config cloud-manager-cluster
+  737  openstack coe cluster list
+  738  vim openrc
+  739  vim openrc liu.li CloudDB
+  740  source openrc liu.li CloudDB
+  741  export ADMIN_PASSWORD=think4yise
+  742  openstack coe cluster list
+  743  vim openrc
+  744  export ADMIN_PASSWORD=think4yise
+  745  source openrc liu.li CloudDB
+  746  openstack coe cluster list
+  747  openstack coe cluster config cloud-manager-cluster
+  748  cat /opt/stack/devstack/config
+  749  cp /opt/stack/devstack/config /opt/stack/devstack/cloud-manager-cluster-config
+  750  export KUBECONFIG=/opt/stack/devstack/cloud-manager-cluster-config
+  751  kubectl get pod
+  752  kubectl get service
+  753  cat /opt/stack/devstack/config /opt/stack/devstack/cloud-manager-cluster-config
+  754  kubectl get pod
+  755  ls
+  756  cd k8s
+  757  ls
+  758  cd ~
+  759  ls
+  760  cd devstack/
+  761  ls
+  762  source openrc admin admin
+  763  openstack coe cluster list
+  764  openstack coe cluster show test_cluster
+  765  openstack coe cluster template show test_cluster
+  766  openstack coe cluster template show test
+  767  ls
+  768  cd ../img/
+  769  ls
+  770  wget https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-2009.qcow2
+  771  openstack image create CentOS-7-x86_64 --public --disk-format qcow2 --container-format bare --file CentOS-7-x86_64-GenericCloud-2009.qcow2
+  772  openstack image create CentOS-7-x86_64 --public --disk-format qcow2 --container-format bare --file CentOS-7-x86_64-GenericCloud.qcow2
+  773  neutron security-group-rule-create --protocol icmp 4ab52e24-f155-4de6-920c-a7906e88d22d
+  774  neutron security-group-rule-create --protocol tcp 4ab52e24-f155-4de6-920c-a7906e88d22d
+  775  wget https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img
+  776  openstack image create Ubuntu18.04-x86_64  --public --disk-format qcow2 --container-format bare --file bionic-server-cloudimg-amd64.img
+  777  neutron security-group-rule-create --protocol icmp  00fa6803-9130-4e99-ae8d-974d0f0fd2a7
+  778  neutron security-group-rule-create --protocol tcp 00fa6803-9130-4e99-ae8d-974d0f0fd2a7
+  779  neutron security-group-rule-create --protocol tcp ffa22a48-fc26-4f4e-a550-6f385f886268
+  780  neutron security-group-rule-create --protocol icmpo ffa22a48-fc26-4f4e-a550-6f385f886268
+  781  neutron security-group-rule-create --protocol icmp ffa22a48-fc26-4f4e-a550-6f385f886268
+  782  neutron security-group-rule-create --protocol icmp 3caec07e-8270-407f-bbe1-be33d51b1050
+  783  neutron security-group-rule-create --protocol tcp 3caec07e-8270-407f-bbe1-be33d51b1050
+  784  openstack coe cluster template k8s_cluster_personal show
+  785  openstack coe cluster template show k8s_cluster_personal
+  786  neutron port-list
+  787  openstack network list
+  788  manila share-network
+  789  openstack network show 2573624a-4217-49f6-bde0-2c6d8975fb9e
+  790  openstack network show 308b4d90-a0cd-45ad-be58-bcc136ae1184
+  791  cd ~
+  792  ls
+  793  cd devstack/
+  794  ls
+  795  vim local.conf
+  796  git status
+  797  git diff  inc/python
+  798  cd ~
+  799  ls
+  800  cd devstack/
+  801  ls
+  802  source openrc admin admin
+  803  openstack flavor list
+  804  sudo service rabbitmq-server restart
+  805  sudo service rabbitmq-server status
+  806  sudo service apache2 status
+  807  sudo service apache2 retart
+  808  sudo service apache2 restart
+  809  sudo service mysql restart
+  810  openstack flavor list
+  811  cd ~
+  812  cd devstack/
+  813  ls
+  814  source openrc admin admin
+  815  openstack flavor list
+  816  openstack flavor show m1.xlarge
+  817  ls
+  818  dirname $0
+  819  ls *-screenrc
+  820  ls stack-screenrc
+  821  vim stack.sh
+  822  cd ~
+  823  ls
+  824  cd devstack/
+  825  ls
+  826  source openrc admin admin
+  827  openstack flavor list
+  828  sudo su root
+  829  keystone-manage token_flush
+  830  keystone-manage token_rotate
+  831  keystone-manage trust_flush
+  832  keystone-manage token_flush
+  833  sudo systemctl list-unit-files --all | grep devstack
+  834  sudo systemctl restart devstack@keystone.service
+  835  vim restart_services.sh
+  836  mysql
+  837  vim restart_services.sh
+  838  chmod +x restart_services.sh
+  839  ./restart_services.sh
+  840  vim restart_services.sh
+  841  sudo systemctl restart devstack@barbican-keystone-listener.service
+  842  vim restart_services.sh
+  843  ./restart_services.sh
+  844  sudo /usr/bin/restart-memcached.sh
+  845  cat /usr/bin/restart-memcached.sh
+  846  vim restart_services.sh
+  847  vim /etc/networks
+  848  vim /etc/network/interfaces
+  849  sudo su root
+  850  cp openstack.sql ~
+  851  cd ~
+  852  ls
+  853  mysqldump < openstack.sql
+  854  mysqldump --all-databases  < openstack.sql
+  855  mysql
+  856  mysql < openstack.sql
+  857  ls
+  858  ll
+  859  cp /home/li/openstack.sql
+  860  cp /home/li/openstack.sql .
+  861  mysql < openstack.sql
+  862  ls
+  863  cd devstack/
+  864  ls
+  865  cd ~
+  866  ls
+  867  cd devstack/
+  868  ls
+  869  cat restart_services.sh
+  870  cd ~
+  871  ls
+  872  cd devstack/
+  873  ls
+  874  cp restart_services.sh stop_services.sh
+  875  vim stop_services.sh
+  876  ./stop_services.sh
+  877  vim local.conf
+  878  ./restart_services.sh
+  879  ping 192.168.6.102
+  880  ping 192.168.6.1
+  881  ping 192.168.6.103
+  882  ping
+  883  ping 192.168.6.90
+  884  cd ~
+  885  ls
+  886  cd devstack/
+  887  ls
+  888  source openrc admin admin
+  889  openstack flavor list
+  890  openstack project list
+  891  openstack quota show sequoiaDP
+  892  openstack quota set --cores 150 sequoiaDP
+  893  cd ~
+  894  ls
+  895  cd devstack/
+  896  ls
+  897  owd
+  898  pwd
+  899  sudo su root
+  900  ;s
+  901  ls
+  902  ll
+  903  cd ~
+  904  ls
+  905  cd devstack/
+  906  ls
+  907  cd ~
+  908  ls
+  909  cd devstack/
+  910  ls
+  911  vim openrc
+  912  vim local.conf
+  913  mysql -u root -p
+  914  ls
+  915  mysqldump -u root -p --all-databases > mysql.dump
+  916  cat local.conf
+  917  mysqldump -u root -p --all-databases > mysql.dump
+  918  ls
+  919  ll -l
+  920  ll -lh
+  921  openstack host list
+  922  cd
+  923  clear
+  924  openstack host list
+  925  ls -lrt
+  926  cd devstack/
+  927  ls -lrt
+  928  clear
+  929  history
+  930  source openrc admin admin
+  931  openstack flavor list
+  932  cd
+  933  source openrc admin admin
+  934  cd devstack/
+  935  source openrc admin admin
+  936  pwd
+  937  history
+  938  openstack flavor list
+  939  ls -lrt
+  940  cd ..
+  941  ls -lrt
+
+```
